@@ -26,8 +26,9 @@ const List = ({ people }) => {
             </article>
           );
         }
-
+        return <></>;
       })}
+
 
     </>
 
