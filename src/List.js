@@ -1,16 +1,16 @@
-import { useState } from "react";
+import React from "react";
 
 const List = ({ people }) => {
+  let date = new Date();
+  let day = date.getDate();
+  let month = date.getMonth();
+  let year = date.getFullYear();
   return (
     <>
 
-      {/* <h3>{people.length} birthdays today</h3> */}
       {people.map((person) => {
         const { id, name, image, birthDay, birthMonth, birthYear } = person;
-        let date = new Date();
-        let day = date.getDate();
-        let month = date.getMonth();
-        let year = date.getFullYear();
+
 
 
 
