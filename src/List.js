@@ -26,8 +26,11 @@ const List = ({ people }) => {
             </article>
           );
         }
+
       })}
+
     </>
+
 
   );
 };
