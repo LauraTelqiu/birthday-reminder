@@ -3,7 +3,7 @@ import people from "./data";
 import {
   FaChevronLeft,
   FaChevronRight,
-  FaPeopleArrows,
+  // FaPeopleArrows,
   FaQuoteRight,
 } from "react-icons/fa";
 
