@@ -94,7 +94,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.25rem;
+  font-size: 1.25rem;
 }
 
 h4 {
@@ -102,21 +102,21 @@ h4 {
 }
 
 p {
-  margin-bottom: 2.25rem;
+  margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
 
 @media screen and (min-width: 800px) {
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   h3 {
-    font-size: 1rem;
+    font-size: 1.75rem;
   }
 
   h4 {
@@ -146,7 +146,7 @@ p {
 
 @media screen and (min-width: 992px) {
   .section {
-    width: 100vw;
+    width: 95vw;
   }
 }
 
@@ -298,4 +298,5 @@ Jobs
   background: var(--clr-primary-8);
 }
 
-.center-btn {}
+/* 
+.center-btn {} */
