@@ -276,7 +276,7 @@ article {
   transition: var(--transition);
 }
 
-/* article.activeSlide {
+article.activeSlide {
   opacity: 1;
   transform: translateX(0);
 }
@@ -287,4 +287,4 @@ article.lastSlide {
 
 article.nextSlide {
   transform: translateX(100%);
-} */
+}
