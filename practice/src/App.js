@@ -1,13 +1,11 @@
 import React from 'react'
-// import Posts from './Posts'
-import Authors from './Authors'
+import Course from './Course'
 
 const App = () => {
   return (
-    <div>
-      {/* <Posts /> */}
-      <Authors />
-    </div>
+    <>
+      <Course />
+    </>
   )
 }
 
