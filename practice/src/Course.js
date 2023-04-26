@@ -22,7 +22,12 @@ const Course = () => {
 
                     <div className="flex justify-between p-4">
                       <div className="text-left">
-                        <MdOndemandVideo />{lesson.name}</div>
+                        <p><MdOndemandVideo /> {lesson.name} </p>
+
+
+
+
+                      </div>
                       <div className="text-right">
                         <h3>{lesson.type}&nbsp; &nbsp; &nbsp;{lesson.length}</h3>
 
