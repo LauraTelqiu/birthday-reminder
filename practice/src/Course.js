@@ -30,7 +30,16 @@ const Course = () => {
 
                       </div>
                       <div className="text-right">
-                        <h3>{lesson.type}&nbsp; &nbsp; &nbsp;{lesson.length}</h3>
+                        <div className="flex items-center">
+                          <a href="" className="underline text-blue-500 mr-6">{lesson.type}</a>
+                          <h3>
+                            {Math.floor(lesson.length / 60)}:{(lesson.length % 60).toString().padStart(2, '0')}
+                          </h3>
+
+                          {/* <h3>{lesson.length}</h3> */}
+
+                        </div>
+
 
                       </div>
 
@@ -43,7 +52,7 @@ const Course = () => {
           ))}
         </div>
       </div>
-    </div>
+    </div >
 
   );
 };
