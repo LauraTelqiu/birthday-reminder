@@ -5,11 +5,11 @@ import { MdOndemandVideo } from 'react-icons/md';
 const Course = () => {
   return (
     <div className="mx-auto w-1/2">
-      <div className="flex justify-between flex-col m-10 border black mx-auto">
-        <div>
+      <div className="flex justify-between flex-col m-10 mx-auto">
+        <div className="border border-red">
           {sections.map((section) => (
             <div key={section.id}>
-              <div className="flex justify-between p-4">
+              <div className="flex justify-between p-4 border border-black bg-slate-100">
                 <div className="text-left">{section.name}</div>
                 <div className="text-right">
                   {section.lectures}
@@ -20,8 +20,8 @@ const Course = () => {
                 {section.lessons.map((lesson) => (
                   <div key={lesson.id}>
 
-                    <div className="flex justify-between p-4">
-                      <div className="text-left">
+                    <div className="flex justify-between p-4  ">
+                      <div className="text-left ">
                         <div className="flex items-center">
                           <MdOndemandVideo className="mr-2" />
                           <a href="#" className="underline text-blue-500">{lesson.name}</a>
