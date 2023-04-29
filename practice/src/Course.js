@@ -24,7 +24,8 @@ const Course = () => {
                       <div className="text-left">
                         <div className="flex items-center">
                           <MdOndemandVideo className="mr-2" />
-                          <p>{lesson.name}</p>
+                          <a href="#" className="underline text-blue-500">{lesson.name}</a>
+
                         </div>
 
                       </div>
