@@ -1,7 +1,8 @@
+import { Section } from './Section';
 import React, { useState } from "react";
+
 import { sections } from "./data";
 import { MdOndemandVideo } from "react-icons/md";
-import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 
 const Course = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -9,26 +10,13 @@ const Course = () => {
   const toggleExpansion = () => {
     setIsExpanded(!isExpanded);
   };
-
   return (
     <div className="mx-auto w-1/2">
       <div className="flex justify-between flex-col m-10 mx-auto">
         <div>
           {sections.map((section) => (
             <div key={section.id}>
-              <div
-                className="flex justify-between p-4 border border-black bg-slate-100"
-                onClick={toggleExpansion}
-              >
-                <div className="flex items-center">
-                  {isExpanded ? <BiChevronUp /> : <BiChevronDown />}
-                  <div className="text-left ml-2">{section.name}</div>
-                </div>
-                <div className="text-right">
-                  {section.lectures}
-                  <span className="ml-2"> • {section.totalMins}min</span>
-                </div>
-              </div>
+              <Section toggleExpansion={toggleExpansion} isExpanded={isExpanded} section={section} />
               {isExpanded && (
                 <div className="flex flex-col justify-start border border-black ">
                   {section.lessons.map((lesson) => (
