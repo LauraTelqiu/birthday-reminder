@@ -1,13 +1,15 @@
 import React from 'react'
 // import ControlledInputs from './ControlledInputs'
-import AddUser from './AddUser'
+// import AddUser from './AddUser'
+import MultipleInputs from './MultipleInputs'
 
 
 const App = () => {
   return (
     <>
       {/* <ControlledInputs /> */}
-      <AddUser />
+      {/* <AddUser /> */}
+      <MultipleInputs />
 
     </>
   )
