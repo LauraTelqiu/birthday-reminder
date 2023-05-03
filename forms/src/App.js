@@ -1,7 +1,8 @@
 import React from 'react'
-// import ControlledInputs from './ControlledInputs'
-// import AddUser from './AddUser'
-import MultipleInputs from './MultipleInputs'
+// import ControlledInputs from './inputs/ControlledInputs.jsControlledInputs'
+// import AddUser from './inputs/AddUser.jsAddUser'
+// import MultipleInputs from './inputs/MultipleInputs'
+import OtherInputs from './inputs/OtherInputs'
 
 
 const App = () => {
@@ -9,7 +10,8 @@ const App = () => {
     <>
       {/* <ControlledInputs /> */}
       {/* <AddUser /> */}
-      <MultipleInputs />
+      {/* <MultipleInputs /> */}
+      <OtherInputs />
 
     </>
   )
